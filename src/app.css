@@ -1,0 +1,60 @@
+.nav-title {
+  font-family: 'Roboto Slab', serif;
+}
+main{
+  background:white;
+  height:100vh;
+  overflow: hidden;
+}
+.form{
+  /* background-image: url("/background1.png"); */
+
+}
+h1, h2, h3, h4, h5, h6{
+  font-size: initial !important;
+}
+
+ul{
+  list-style: initial  !important;
+}
+.formInner{
+  background: #ffffffe5;
+  /* background-image: url("/background2.png"); */
+  background: var(--primary-dark);
+  background-size: cover;
+  background-repeat: no-repeat;  /* Ensures the image doesn't repeat */
+  background-position: center center;  /* Centers the image */
+  /* background: var(--primary-dark); */
+
+}
+p a{
+  color: #17a34a !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 0.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+  border-radius: 3rem;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  background: var(--primary-light);
+  border-radius: 3rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

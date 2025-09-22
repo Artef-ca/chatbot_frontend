@@ -1,0 +1,44 @@
+{
+  "name": "vanna-svelte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 3000",
+    "build": "vite build ",
+    "build:mac": "vite build && rm -r ../backend/static && mv -f ../static ../backend",
+    "build:win": "vite build && rmdir /s /q ..\\backend\\static && move /Y ..\\static ..\\backend",
+    "build:vite": "vite build",
+    "production": "vite build && rm -r ../backend/static && mv -f ../static ../backend && cd ../backend && gcloud app deploy --version=artefact-insights",
+    "preview": "vite preview --port 5000",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node": "^22.12.0",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "svelte": "^4.2.10",
+    "svelte-check": "^3.4.6",
+    "tailwindcss": "^3.3.3",
+    "tslib": "^2.6.0",
+    "typescript": "^5.7.3",
+    "vite": "^4.5.2"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^4.0.2",
+    "axios": "^1.6.7",
+    "canvg": "^3.0.10",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.1",
+    "jspdf": "^2.5.1",
+    "pdfmake": "^0.2.10",
+    "preline": "^1.9.0",
+    "snarkdown": "^2.0.0",
+    "svelte-exmarkdown": "^3.0.3",
+    "svelte-markdown": "^0.4.1",
+    "svelte-routing": "^2.13.0",
+    "tw-elements": "^1.1.0"
+  }
+}
