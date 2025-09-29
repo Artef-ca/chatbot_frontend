@@ -69,7 +69,7 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    opacity: 0;
+    /* opacity: 0; */
   }
   .btns button {
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
