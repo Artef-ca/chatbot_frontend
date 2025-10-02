@@ -246,11 +246,11 @@
               <!-- Additional options here -->
             </div>
           {/if}
-          <button
+          <!-- <button
             class="audBtn"
             bind:this={promptBtnRef}
             on:click|stopPropagation={togglePromptPopup}>Prompt</button
-          >
+          > -->
         </div>
       </div>
     </div>
